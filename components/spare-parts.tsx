@@ -1,29 +1,29 @@
 import Image from "next/image"
 
 const valvesData = [
-  { cat: "OLY-443", name: "Suction Valve MH-443", brand: "Olympus" },
-  { cat: "OLY-438", name: "Air/Water Valve MH-438", brand: "Olympus" },
-  { cat: "PT-120", name: "Air/Water Valve OF-120", brand: "Pentax" },
-  { cat: "PT-188", name: "Air/Water Valve OF-188", brand: "Pentax" },
+  { cat: "MH-443", name: "MH-443 (Suction)", brand: "Olympus" },
+  { cat: "MH-438", name: "MH-438 (Air/Water)", brand: "Olympus" },
+  { cat: "MH-946", name: "MH-946 (Suction)", brand: "Olympus" },
+  { cat: "MH-944", name: "MH-944 (Air/Water)", brand: "Olympus" },
+  { cat: "OF-120", name: "OF-120 (Suction)", brand: "Pentax" },
+  { cat: "OF-188", name: "OF-188 (Air/Water)", brand: "Pentax" },
+  { cat: "SB-500", name: "SB-500 (Suction)", brand: "Fujifilm" },
+  { cat: "AW-500", name: "AW-500 (Air/Water)", brand: "Fujifilm" },
+  { cat: "SB-605", name: "SB-605 (Suction)", brand: "Fujifilm" },
+  { cat: "AW-603", name: "AW-603 (Air/Water)", brand: "Fujifilm" },
 ]
 
 const waterBottlesData = [
-  { cat: "OLY-901", name: "Water Bottle MAJ-901", brand: "Olympus" },
-  { cat: "OLY-902", name: "Water Bottle MAJ-902", brand: "Olympus" },
-  { cat: "WT-4", name: "Water Bottle WT-4", brand: "Fujifilm" },
+  { cat: "MAJ-901", name: "MAJ-901", brand: "Olympus" },
+  { cat: "MAJ-902", name: "MAJ-902", brand: "Olympus" },
+  { cat: "WT-4", name: "WT-4", brand: "Fujifilm" },
 ]
 
 const accessoriesData = [
-  { cat: "OLY-553", name: "Resistant Soaking Cap MH-553", brand: "Olympus" },
-  { cat: "OLY-946", name: "Suction Button MH-946", brand: "Olympus" },
-  { cat: "OLY-944", name: "Air/Water Button MH-944", brand: "Olympus" },
-  { cat: "OLY-1430", name: "Cleaning Adapter MAJ-1430", brand: "Olympus" },
-  { cat: "OLY-948", name: "Biopsy Valve MH-948", brand: "Olympus" },
-  { cat: "OLY-855", name: "Leak Tester MAJ-855", brand: "Olympus" },
-  { cat: "FUJI-SB500", name: "Suction Button SB-500", brand: "Fujifilm" },
-  { cat: "FUJI-AW500", name: "Air/Water Button AW-500", brand: "Fujifilm" },
-  { cat: "FUJI-SB605", name: "Suction Button SB-605", brand: "Fujifilm" },
-  { cat: "FUJI-AW603", name: "Air/Water Button AW-603", brand: "Fujifilm" },
+  { cat: "MH-553", name: "Resistant Soaking Cap MH-553", brand: "Olympus" },
+  { cat: "MAJ-1430", name: "MAJ-1430 (OEM)", brand: "Olympus" },
+  { cat: "MH-948", name: "MH-948", brand: "Olympus" },
+  { cat: "MAJ-855", name: "MAJ-855", brand: "Olympus" },
 ]
 
 function TableHeader() {
@@ -136,13 +136,13 @@ export default function SpareParts() {
 
         {/* Right Column: Product Images */}
         <div className="w-[45%] pl-2 relative">
-          {/* Valves Image */}
+          {/* Buttons Image */}
           <div className="relative h-[180px] bg-[#f8fafc] rounded-lg border border-[#e2e8f0] p-2">
-            <p className="text-[9px] font-semibold text-[#475569] mb-1">Valves</p>
+            <p className="text-[9px] font-semibold text-[#475569] mb-1">Buttons</p>
             <div className="relative h-[140px]">
               <Image
-                src="/images/spare-parts-valves.png"
-                alt="Endoscope valves - suction and air/water valves"
+                src="/images/spare-parts-buttons.png"
+                alt="Endoscope buttons - suction and air/water buttons"
                 fill
                 className="object-contain"
               />
@@ -191,9 +191,9 @@ export default function SpareParts() {
               Spare Parts Summary
             </h3>
             <div className="grid grid-cols-2 gap-1 text-[8px] text-[#4b5563]">
-              <div>Valves: 4</div>
+              <div>Valves: 10</div>
               <div>Water Bottles: 3</div>
-              <div>Accessories: 10</div>
+              <div>Accessories: 4</div>
               <div>Repair Tools: 2</div>
               <div className="col-span-2 font-semibold text-[#1f2937] border-t border-[#bae6fd] pt-1 mt-1">
                 Total: 19 items
