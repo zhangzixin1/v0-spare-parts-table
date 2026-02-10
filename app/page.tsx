@@ -5,6 +5,7 @@ import LightGuideTube from "@/components/light-guide-tube"
 import BendingSection from "@/components/bending-section"
 import BendingRubber from "@/components/bending-rubber"
 import BiopsyChannel from "@/components/biopsy-channel"
+import InsertionTubeOlympus from "@/components/insertion-tube-olympus"
 import InsertionTubePentaxFuji from "@/components/insertion-tube-pentax-fuji"
 import CoilPipeAssembly from "@/components/coil-pipe-assembly"
 
@@ -18,6 +19,7 @@ export default function Page() {
       <BendingSection />
       <BendingRubber />
       <BiopsyChannel />
+      <InsertionTubeOlympus />
       <InsertionTubePentaxFuji />
       <CoilPipeAssembly />
     </main>
