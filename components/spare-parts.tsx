@@ -18,8 +18,8 @@ const waterBottlesData = [
 ]
 
 const accessoriesData = [
-  { cat: "MH-946", name: "MH-946 (Suction)", brand: "Olympus" },
-  { cat: "MH-944", name: "MH-944 (Air/Water)", brand: "Olympus" },
+  { cat: "MH-946", name: "MH-946", brand: "Olympus" },
+  { cat: "MH-944", name: "MH-944", brand: "Olympus" },
   { cat: "MH-553", name: "Resistant Soaking Cap MH-553", brand: "Olympus" },
   { cat: "MAJ-1430", name: "MAJ-1430 (OEM)", brand: "Olympus" },
   { cat: "MH-948", name: "MH-948", brand: "Olympus" },
