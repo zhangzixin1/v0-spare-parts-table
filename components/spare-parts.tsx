@@ -15,6 +15,15 @@ const waterBottlesData = [
 
 const accessoriesData = [
   { cat: "OLY-553", name: "Resistant Soaking Cap MH-553", brand: "Olympus" },
+  { cat: "OLY-946", name: "Suction Button MH-946", brand: "Olympus" },
+  { cat: "OLY-944", name: "Air/Water Button MH-944", brand: "Olympus" },
+  { cat: "OLY-1430", name: "Cleaning Adapter MAJ-1430", brand: "Olympus" },
+  { cat: "OLY-948", name: "Biopsy Valve MH-948", brand: "Olympus" },
+  { cat: "OLY-855", name: "Leak Tester MAJ-855", brand: "Olympus" },
+  { cat: "FUJI-SB500", name: "Suction Button SB-500", brand: "Fujifilm" },
+  { cat: "FUJI-AW500", name: "Air/Water Button AW-500", brand: "Fujifilm" },
+  { cat: "FUJI-SB605", name: "Suction Button SB-605", brand: "Fujifilm" },
+  { cat: "FUJI-AW603", name: "Air/Water Button AW-603", brand: "Fujifilm" },
 ]
 
 function TableHeader() {
@@ -61,7 +70,7 @@ export default function SpareParts() {
       {/* Header - Logo */}
       <div className="absolute top-4 right-6">
         <Image
-          src="/images/endotec-logo.jpg"
+          src="/images/endotec-logo.png"
           alt="ENDOTEC PARTS logo"
           width={100}
           height={50}
@@ -132,7 +141,7 @@ export default function SpareParts() {
             <p className="text-[9px] font-semibold text-[#475569] mb-1">Valves</p>
             <div className="relative h-[140px]">
               <Image
-                src="/images/spare-parts-valves.jpg"
+                src="/images/spare-parts-valves.png"
                 alt="Endoscope valves - suction and air/water valves"
                 fill
                 className="object-contain"
@@ -145,7 +154,7 @@ export default function SpareParts() {
             <p className="text-[9px] font-semibold text-[#475569] mb-1">Water Bottles</p>
             <div className="relative h-[140px]">
               <Image
-                src="/images/spare-parts-bottles.jpg"
+                src="/images/spare-parts-bottles.png"
                 alt="Water bottles for endoscope irrigation"
                 fill
                 className="object-contain"
@@ -184,10 +193,10 @@ export default function SpareParts() {
             <div className="grid grid-cols-2 gap-1 text-[8px] text-[#4b5563]">
               <div>Valves: 4</div>
               <div>Water Bottles: 3</div>
-              <div>Accessories: 1</div>
+              <div>Accessories: 10</div>
               <div>Repair Tools: 2</div>
               <div className="col-span-2 font-semibold text-[#1f2937] border-t border-[#bae6fd] pt-1 mt-1">
-                Total: 10 items
+                Total: 19 items
               </div>
             </div>
           </div>
