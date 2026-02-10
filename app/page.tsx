@@ -5,6 +5,7 @@ import BendingSection from "@/components/bending-section"
 import BendingRubber from "@/components/bending-rubber"
 import BiopsyChannel from "@/components/biopsy-channel"
 import InsertionTubePentaxFuji from "@/components/insertion-tube-pentax-fuji"
+import CoilPipeAssembly from "@/components/coil-pipe-assembly"
 
 export default function Page() {
   return (
@@ -16,6 +17,7 @@ export default function Page() {
       <BendingRubber />
       <BiopsyChannel />
       <InsertionTubePentaxFuji />
+      <CoilPipeAssembly />
     </main>
   )
 }
