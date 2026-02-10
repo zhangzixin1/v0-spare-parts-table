@@ -2,6 +2,7 @@ import SpareParts from "@/components/spare-parts"
 import LightGuideBundleOlympus from "@/components/light-guide-bundle-olympus"
 import LightGuideTube from "@/components/light-guide-tube"
 import BendingSection from "@/components/bending-section"
+import BendingRubber from "@/components/bending-rubber"
 
 export default function Page() {
   return (
@@ -10,6 +11,7 @@ export default function Page() {
       <LightGuideBundleOlympus />
       <LightGuideTube />
       <BendingSection />
+      <BendingRubber />
     </main>
   )
 }
