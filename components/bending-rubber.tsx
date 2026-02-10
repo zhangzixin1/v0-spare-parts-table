@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Watermark from "./watermark"
 
 const rubberData = [
   { cat: "VBR-OD13_4-L180", od: "13.4", len: "180" },
@@ -194,8 +195,10 @@ export default function BendingRubber() {
         </div>
       </div>
 
+      <Watermark />
+
       {/* Footer */}
-      <div className="absolute bottom-4 left-6 right-6 flex justify-between text-[9px] text-[#9ca3af]">
+      <div className="absolute bottom-4 left-6 right-6 flex justify-between text-[9px] text-[#9ca3af]" style={{ zIndex: 11 }}>
         <span className="text-[#6b7280] font-medium">Universal Sizes</span>
         <span>www.endotec-med.com</span>
         <span className="text-[#6b7280] font-medium">12</span>

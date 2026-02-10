@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Watermark from "./watermark"
 
 const gastroscopeData = [
   { cat: "CPASY-GIF100", models: "GIF-100" },
@@ -202,8 +203,10 @@ export default function CoilPipeAssembly() {
         </div>
       </div>
 
+      <Watermark />
+
       {/* Footer */}
-      <div className="absolute bottom-4 left-6 right-6 flex justify-between text-[9px] text-[#9ca3af]">
+      <div className="absolute bottom-4 left-6 right-6 flex justify-between text-[9px] text-[#9ca3af]" style={{ zIndex: 11 }}>
         <span className="text-[#6b7280] font-medium">For Olympus</span>
         <span>www.endotec-med.com</span>
         <span className="text-[#6b7280] font-medium">11</span>

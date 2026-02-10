@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Watermark from "./watermark"
 
 const olympusGastroData = [
   { cat: "BS-01", od: "Φ8.5", thickness: "0.3", id: "Φ4.9", len: "68", models: "GIF-XQ240" },
@@ -226,8 +227,10 @@ export default function BendingSection() {
         </div>
       </div>
 
+      <Watermark />
+
       {/* Footer */}
-      <div className="absolute bottom-4 left-6 right-6 flex justify-between text-[9px] text-[#9ca3af]">
+      <div className="absolute bottom-4 left-6 right-6 flex justify-between text-[9px] text-[#9ca3af]" style={{ zIndex: 11 }}>
         <span className="text-[#6b7280] font-medium">All Brands</span>
         <span>www.endotec-med.com</span>
         <span className="text-[#6b7280] font-medium">9</span>

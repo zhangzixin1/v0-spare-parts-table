@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Watermark from "./watermark"
 
 // Pentax data
 const pentaxGastroscopeData = [
@@ -192,8 +193,10 @@ export default function InsertionTubePentaxFuji() {
         </div>
       </div>
 
+      <Watermark />
+
       {/* Footer */}
-      <div className="absolute bottom-4 left-6 right-6 flex justify-between text-[9px] text-[#9ca3af]">
+      <div className="absolute bottom-4 left-6 right-6 flex justify-between text-[9px] text-[#9ca3af]" style={{ zIndex: 11 }}>
         <span className="text-[#6b7280] font-medium">Pentax & Fujifilm</span>
         <span>www.endotec-med.com</span>
         <span className="text-[#6b7280] font-medium">4</span>

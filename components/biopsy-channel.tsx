@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Watermark from "./watermark"
 
 const olympusData = [
   { cat: "BC-ID1_2-OD1_6-L1000", id: "1.2", od: "1.6", len: "1000" },
@@ -194,8 +195,10 @@ export default function BiopsyChannel() {
         </div>
       </div>
 
+      <Watermark />
+
       {/* Footer */}
-      <div className="absolute bottom-4 left-6 right-6 flex justify-between text-[9px] text-[#9ca3af]">
+      <div className="absolute bottom-4 left-6 right-6 flex justify-between text-[9px] text-[#9ca3af]" style={{ zIndex: 11 }}>
         <span className="text-[#6b7280] font-medium">All Brands</span>
         <span>www.endotec-med.com</span>
         <span className="text-[#6b7280] font-medium">8</span>
