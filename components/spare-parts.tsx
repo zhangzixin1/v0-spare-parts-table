@@ -141,7 +141,7 @@ export default function SpareParts() {
             <p className="text-[9px] font-semibold text-[#475569] mb-1">Buttons</p>
             <div className="relative h-[140px]">
               <Image
-                src="/images/spare-parts-buttons.png"
+                src="/images/spare-parts-buttons.jpg"
                 alt="Endoscope buttons - suction and air/water buttons"
                 fill
                 className="object-contain"
@@ -154,7 +154,7 @@ export default function SpareParts() {
             <p className="text-[9px] font-semibold text-[#475569] mb-1">Water Bottles</p>
             <div className="relative h-[140px]">
               <Image
-                src="/images/spare-parts-bottles.png"
+                src="/images/spare-parts-bottles.jpg"
                 alt="Water bottles for endoscope irrigation"
                 fill
                 className="object-contain"
