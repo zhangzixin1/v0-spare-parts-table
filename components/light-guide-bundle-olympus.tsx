@@ -142,7 +142,7 @@ export default function LightGuideBundleOlympus() {
           {/* Light guide bundle image */}
           <div className="relative h-[450px]">
             <Image
-              src="/images/light-guide-bundle-olympus.jpg"
+              src="/images/light-guide-bundle-olympus.png"
               alt="Olympus light guide bundle fiber optic assembly"
               fill
               className="object-contain"
