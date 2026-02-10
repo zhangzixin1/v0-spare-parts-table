@@ -4,6 +4,7 @@ import LightGuideTube from "@/components/light-guide-tube"
 import BendingSection from "@/components/bending-section"
 import BendingRubber from "@/components/bending-rubber"
 import BiopsyChannel from "@/components/biopsy-channel"
+import InsertionTubePentaxFuji from "@/components/insertion-tube-pentax-fuji"
 
 export default function Page() {
   return (
@@ -14,6 +15,7 @@ export default function Page() {
       <BendingSection />
       <BendingRubber />
       <BiopsyChannel />
+      <InsertionTubePentaxFuji />
     </main>
   )
 }
