@@ -3,8 +3,6 @@ import Image from "next/image"
 const valvesData = [
   { cat: "MH-443", name: "MH-443 (Suction)", brand: "Olympus" },
   { cat: "MH-438", name: "MH-438 (Air/Water)", brand: "Olympus" },
-  { cat: "MH-946", name: "MH-946 (Suction)", brand: "Olympus" },
-  { cat: "MH-944", name: "MH-944 (Air/Water)", brand: "Olympus" },
   { cat: "OF-120", name: "OF-120 (Suction)", brand: "Pentax" },
   { cat: "OF-188", name: "OF-188 (Air/Water)", brand: "Pentax" },
   { cat: "SB-500", name: "SB-500 (Suction)", brand: "Fujifilm" },
@@ -20,6 +18,8 @@ const waterBottlesData = [
 ]
 
 const accessoriesData = [
+  { cat: "MH-946", name: "MH-946 (Suction)", brand: "Olympus" },
+  { cat: "MH-944", name: "MH-944 (Air/Water)", brand: "Olympus" },
   { cat: "MH-553", name: "Resistant Soaking Cap MH-553", brand: "Olympus" },
   { cat: "MAJ-1430", name: "MAJ-1430 (OEM)", brand: "Olympus" },
   { cat: "MH-948", name: "MH-948", brand: "Olympus" },
@@ -191,9 +191,9 @@ export default function SpareParts() {
               Spare Parts Summary
             </h3>
             <div className="grid grid-cols-2 gap-1 text-[8px] text-[#4b5563]">
-              <div>Valves: 10</div>
+              <div>Valves: 8</div>
               <div>Water Bottles: 3</div>
-              <div>Accessories: 4</div>
+              <div>Accessories: 6</div>
               <div>Repair Tools: 2</div>
               <div className="col-span-2 font-semibold text-[#1f2937] border-t border-[#bae6fd] pt-1 mt-1">
                 Total: 19 items
