@@ -64,7 +64,7 @@ export default function CatalogCover() {
         {/* Bottom bar with website */}
         <div className="absolute bottom-0 left-0 right-0 h-10 bg-[#1a365d]/80 flex items-center justify-center z-10">
           <p className="text-[11px] text-[#ffffff]/90 tracking-widest">
-            www.endotecparts.com
+            www.endotec-med.com
           </p>
         </div>
       </div>
