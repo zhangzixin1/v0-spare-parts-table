@@ -196,7 +196,7 @@ export default function LightGuideTube() {
       <div className="absolute bottom-4 left-6 right-6 flex justify-between text-[9px] text-[#9ca3af]" style={{ zIndex: 11 }}>
         <span className="text-[#6b7280] font-medium">All Brands</span>
         <span>www.endotec-med.com</span>
-        <span className="text-[#6b7280] font-medium">7</span>
+        <span className="text-[#6b7280] font-medium">5</span>
       </div>
     </div>
   )

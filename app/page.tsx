@@ -14,16 +14,26 @@ export default function Page() {
   return (
     <main className="min-h-screen flex flex-col items-center bg-[#e5e7eb] gap-8 p-8">
       <PdfDownloadButton />
+      {/* P1 - Cover */}
       <CatalogCover />
-      <SpareParts />
-      <LightGuideBundleOlympus />
-      <LightGuideTube />
-      <BendingSection />
-      <BendingRubber />
-      <BiopsyChannel />
+      {/* P2 - Insertion Tube Olympus */}
       <InsertionTubeOlympus />
+      {/* P4 - Insertion Tube Pentax & Fuji */}
       <InsertionTubePentaxFuji />
+      {/* P5 - Light Guide Bundle */}
+      <LightGuideBundleOlympus />
+      {/* P7 - Light Guide Tube */}
+      <LightGuideTube />
+      {/* P8 - Biopsy Channel */}
+      <BiopsyChannel />
+      {/* P9 - Bending Section */}
+      <BendingSection />
+      {/* P11 - Coil Pipe Assembly */}
       <CoilPipeAssembly />
+      {/* P12 - Bending Rubber */}
+      <BendingRubber />
+      {/* P13 - Spare Parts */}
+      <SpareParts />
     </main>
   )
 }

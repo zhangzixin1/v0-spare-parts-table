@@ -209,7 +209,7 @@ export default function CoilPipeAssembly() {
       <div className="absolute bottom-4 left-6 right-6 flex justify-between text-[9px] text-[#9ca3af]" style={{ zIndex: 11 }}>
         <span className="text-[#6b7280] font-medium">For Olympus</span>
         <span>www.endotec-med.com</span>
-        <span className="text-[#6b7280] font-medium">11</span>
+        <span className="text-[#6b7280] font-medium">8</span>
       </div>
     </div>
   )
