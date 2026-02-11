@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export default function CatalogCover() {
   return (
-    <div className="w-[794px] h-[1123px] bg-[#ffffff] relative overflow-hidden font-sans">
+    <div data-catalog-page className="w-[794px] h-[1123px] bg-[#ffffff] relative overflow-hidden font-sans">
       {/* ===== Top 55%: White background + Products banner + Title ===== */}
       <div className="relative h-[55%] bg-[#ffffff]">
         {/* Logo - top left */}

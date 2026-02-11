@@ -8,10 +8,12 @@ import BiopsyChannel from "@/components/biopsy-channel"
 import InsertionTubeOlympus from "@/components/insertion-tube-olympus"
 import InsertionTubePentaxFuji from "@/components/insertion-tube-pentax-fuji"
 import CoilPipeAssembly from "@/components/coil-pipe-assembly"
+import PdfDownloadButton from "@/components/pdf-download-button"
 
 export default function Page() {
   return (
     <main className="min-h-screen flex flex-col items-center bg-[#e5e7eb] gap-8 p-8">
+      <PdfDownloadButton />
       <CatalogCover />
       <SpareParts />
       <LightGuideBundleOlympus />

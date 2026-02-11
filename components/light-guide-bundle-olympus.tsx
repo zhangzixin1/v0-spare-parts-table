@@ -107,7 +107,7 @@ function DataRow({
 
 export default function LightGuideBundleOlympus() {
   return (
-    <div className="w-[794px] h-[1123px] bg-[#ffffff] relative font-sans text-[11px]">
+    <div data-catalog-page className="w-[794px] h-[1123px] bg-[#ffffff] relative font-sans text-[11px]">
       {/* Header - Logo */}
       <div className="absolute top-4 right-6">
         <Image
