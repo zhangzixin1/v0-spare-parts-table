@@ -14,17 +14,21 @@ export default function PdfDownloadButton() {
       const html2canvas = (await import("html2canvas")).default
       const { jsPDF } = await import("jspdf")
 
-      // A4 dimensions in mm
-      const a4Width = 210
-      const a4Height = 297
+      // Page pixel dimensions match our components (794 x 1123)
+      const pagePixelWidth = 794
+      const pagePixelHeight = 1123
+
+      // Use the exact aspect ratio of our pages for the PDF page size
+      // A4 width = 210mm, height = 210 * (1123/794) = 296.87mm
+      const pdfPageWidth = 210
+      const pdfPageHeight = pdfPageWidth * (pagePixelHeight / pagePixelWidth)
 
       const pdf = new jsPDF({
         orientation: "portrait",
         unit: "mm",
-        format: "a4",
+        format: [pdfPageWidth, pdfPageHeight],
       })
 
-      // Select all catalog pages (each page has data-catalog-page attribute)
       const pages = document.querySelectorAll("[data-catalog-page]")
       const totalPages = pages.length
 
@@ -39,15 +43,17 @@ export default function PdfDownloadButton() {
           allowTaint: true,
           backgroundColor: "#ffffff",
           logging: false,
+          width: pagePixelWidth,
+          height: pagePixelHeight,
         })
 
-        const imgData = canvas.toDataURL("image/jpeg", 0.92)
+        const imgData = canvas.toDataURL("image/jpeg", 0.95)
 
         if (i > 0) {
-          pdf.addPage()
+          pdf.addPage([pdfPageWidth, pdfPageHeight])
         }
 
-        pdf.addImage(imgData, "JPEG", 0, 0, a4Width, a4Height)
+        pdf.addImage(imgData, "JPEG", 0, 0, pdfPageWidth, pdfPageHeight)
       }
 
       pdf.save("ENDOTEC-Parts-Catalog.pdf")
